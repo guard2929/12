@@ -4,39 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/pc_store.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/db.sqlite3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/manage.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/pc_store/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/pc_store/asgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/pc_store/settings.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/pc_store/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/pc_store/wsgi.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/media/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/static/store/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/templates/store/base.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/templates/store/configure_pc.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/templates/store/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/templates/store/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/templates/store/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +20,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
@@ -91,6 +60,23 @@
       <option name="presentableId" value="Default" />
       <updated>1743937381384</updated>
     </task>
+    <task id="LOCAL-00001" summary="1">
+      <option name="closed" value="true" />
+      <created>1743942732618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743942732618</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <option name="closed" value="true" />
+      <created>1743942736972</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743942736972</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
