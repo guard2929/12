@@ -18040,3 +18040,15 @@ File C:\Users\User\AppData\Local\Programs\Python\Python310\Lib\site-packages\dja
 (0.000) SELECT "store_product"."id", "store_product"."name", "store_product"."description", "store_product"."price", "store_product"."image" FROM "store_product"; args=(); alias=default
 "GET / HTTP/1.1" 200 1104
 "GET /register/ HTTP/1.1" 200 2152
+File D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\templates\store previous mtime: 1743942198.1727016, current mtime: 1743942353.6259105
+D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\templates\store notified as changed. Signal results: [(<function template_changed at 0x000001FEEB6C6680>, True), (<function translation_file_changed at 0x000001FEEBFADBD0>, None)].
+File D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\templates\store\base.html previous mtime: 1743942198.1727016, current mtime: 1743942353.6259105
+D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\templates\store\base.html notified as changed. Signal results: [(<function template_changed at 0x000001FEEB6C6680>, True), (<function translation_file_changed at 0x000001FEEBFADBD0>, None)].
+File D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\templates\store\login.html previous mtime: 1743938141.3465936, current mtime: 1743942353.6259105
+D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\templates\store\login.html notified as changed. Signal results: [(<function template_changed at 0x000001FEEB6C6680>, True), (<function translation_file_changed at 0x000001FEEBFADBD0>, None)].
+(0.000) SELECT "store_product"."id", "store_product"."name", "store_product"."description", "store_product"."price", "store_product"."image" FROM "store_product"; args=(); alias=default
+"GET / HTTP/1.1" 200 855
+"GET /login/ HTTP/1.1" 200 1395
+"POST /logout/ HTTP/1.1" 302 0
+(0.000) SELECT "store_product"."id", "store_product"."name", "store_product"."description", "store_product"."price", "store_product"."image" FROM "store_product"; args=(); alias=default
+"GET / HTTP/1.1" 200 855
