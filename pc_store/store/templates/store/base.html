@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html> 
+<html lang="ru"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>{% block title %}Магазин ПК{% endblock %}</title> 
+    <link rel="stylesheet" href="{% static 'store/css/styles.css' %}"> 
+</head> 
+<body> 
+    <header> 
+        <h1>Магазин ПК</h1> 
+        <nav> 
+            <a href="{% url 'index' %}">Главная</a> 
+            <a href="{% url 'configure_pc' %}">Собрать ПК</a> 
+            {% if user.is_authenticated %}
+                <form action="{% url 'logout' %}" method="post">
+                  {% csrf_token %}
+                  <button type="submit" class="btn btn-info">Logout</button>
+                </form>
+            {% else %} 
+                <a href="{% url 'login' %}">Вход</a>
+                <a href="{% url 'register' %}">Регистрация</a> 
+            {% endif %} 
+        </nav> 
+    </header> 
+ 
+    <main> 
+        {% block content %}{% endblock %} 
+    </main> 
+ 
+    <footer> 
+        <p>&copy; 2025 Магазин ПК. Все права защищены.</p> 
+    </footer> 
+</body> 
+</html> 

@@ -1,0 +1,36 @@
+{% extends 'store/base.html' %} 
+ 
+{% block title %}Собрать ПК{% endblock %} 
+ 
+{% block content %} 
+<h2>Соберите свой ПК</h2> 
+ 
+{% if success %} 
+    <p style="color: #00ff00; font-weight: bold;">Сборка успешно сохранена!</p> 
+{% endif %} 
+ 
+<form method="post"> 
+    {% csrf_token %} 
+    <div> 
+        <label for="id_cpu">Процессор:</label> 
+        {{ form.cpu }} 
+    </div> 
+    <div> 
+        <label for="id_gpu">Видеокарта:</label> 
+        {{ form.gpu }} 
+    </div> 
+    <div> 
+        <label for="id_ram">ОЗУ:</label> 
+        {{ form.ram }} 
+    </div> 
+    <div> 
+        <label for="id_storage">Хранилище:</label> 
+        {{ form.storage }} 
+    </div> 
+    <div> 
+        <label for="id_address">Адрес доставки:</label> 
+        {{ form.address }} 
+    </div> 
+    <button type="submit">Отправить сборку</button> 
+</form> 
+{% endblock %} 
