@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
-from .models import Product
+from .models import CPU, GPU, RAM, Storage, PCBuild, Product
 from .forms import RegisterForm, PCBuildForm
 
 

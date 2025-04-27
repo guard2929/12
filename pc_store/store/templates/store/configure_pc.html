@@ -2,8 +2,8 @@
  
 {% block title %}Собрать ПК{% endblock %} 
  
-{% block content %} 
-<h2>Соберите свой ПК</h2> 
+{% block content %}
+<h2 xmlns:form.data.storage>Соберите свой ПК</h2>
  
 {% if success %} 
     <p style="color: #00ff00; font-weight: bold;">Сборка успешно сохранена!</p> 
@@ -20,7 +20,7 @@
                name="cpu"
                value="{{ cpu.id }}"
                {% if form.data.cpu|stringformat:"s" == cpu.id|stringformat:"s" %}checked{% endif %}>
-        <img src="{{ cpu.image.url }}" alt="{{ cpu.name }}" style="max-width:100px;">
+        <img src="{{ cpu.image.url }}" alt="{{ cpu.name }}" style="max-width:30px;">
         {{ cpu.name }}
       </label><br>
     {% endfor %}
@@ -34,7 +34,7 @@
                name="gpu"
                value="{{ gpu.id }}"
                {% if form.data.gpu|stringformat:"s" == gpu.id|stringformat:"s" %}checked{% endif %}>
-        <img src="{{ gpu.image.url }}" alt="{{ gpu.name }}" style="max-width:100px;">
+        <img src="{{ gpu.image.url }}" alt="{{ gpu.name }}" style="max-width:30px;">
         {{ gpu.name }}
       </label><br>
     {% endfor %}
@@ -48,7 +48,7 @@
                name="ram"
                value="{{ ram.id }}"
                {% if form.data.ram|stringformat:"s" == ram.id|stringformat:"s" %}checked{% endif %}>
-        <img src="{{ ram.image.url }}" alt="{{ ram.name }}" style="max-width:100px;">
+        <img src="{{ ram.image.url }}" alt="{{ ram.name }}" style="max-width:30px;">
         {{ ram.name }}
       </label><br>
     {% endfor %}
@@ -62,7 +62,7 @@
                name="storage"
                value="{{ storage.id }}"
                {% if form.data.storage|stringformat:"s" == storage.id|stringformat:"s" %}checked{% endif %}>
-        <img src="{{ storage.image.url }}" alt="{{ storage.name }}" style="max-width:100px;">
+        <img src="{{ storage.image.url }}" alt="{{ storage.name }}" style="max-width:30px;">
         {{ storage.name }}
       </label><br>
     {% endfor %}
