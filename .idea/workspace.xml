@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/pc_store/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/initial_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,18 +25,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="SET_USER_NAME_GLOBALLY" value="false" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "guard2929"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;guard2929&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/guard2929/12.git",
-    "accountId": "35a734b5-3cdc-4cee-8111-3542f02b7f0a"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/guard2929/12.git&quot;,
+    &quot;accountId&quot;: &quot;35a734b5-3cdc-4cee-8111-3542f02b7f0a&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -122,7 +123,15 @@
       <option name="project" value="LOCAL" />
       <updated>1744547564990</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="1">
+      <option name="closed" value="true" />
+      <created>1745751407626</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1745751407626</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

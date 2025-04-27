@@ -23,18 +23,15 @@ def register(request):
         form = RegisterForm()
     return render(request, "store/register.html", {"form": form})
 
-
-
 @login_required
 def configure_pc(request):
-    success = False
-    if request.method == "POST":
+    if request.method == 'POST':
         form = PCBuildForm(request.POST)
         if form.is_valid():
-            pc_build = form.save(commit=False)
-            pc_build.user = request.user
-            pc_build.save()
-            success = True
+            pcbuild = form.save(commit=False)
+            pcbuild.user = request.user
+            pcbuild.save()
+            return redirect('store:index')
     else:
         form = PCBuildForm()
-    return render(request, "store/configure_pc.html", {"form": form, "success": success})
+    return render(request, 'store/configure_pc.html', {'form': form})

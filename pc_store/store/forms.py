@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
-from .models import PCBuild
+from .models import CPU, GPU, RAM, Storage, PCBuild
 
 
 class RegisterForm(forms.ModelForm):
@@ -19,30 +19,28 @@ class RegisterForm(forms.ModelForm):
         if password and password2 and password != password2:
             self.add_error('password2', "Пароли не совпадают")
 
-
 class PCBuildForm(forms.ModelForm):
+    cpu = forms.ModelChoiceField(
+        queryset=CPU.objects.all(),
+        widget=forms.RadioSelect,
+        empty_label=None
+    )
+    gpu = forms.ModelChoiceField(
+        queryset=GPU.objects.all(),
+        widget=forms.RadioSelect,
+        empty_label=None
+    )
+    ram = forms.ModelChoiceField(
+        queryset=RAM.objects.all(),
+        widget=forms.RadioSelect,
+        empty_label=None
+    )
+    storage = forms.ModelChoiceField(
+        queryset=Storage.objects.all(),
+        widget=forms.RadioSelect,
+        empty_label=None
+    )
+
     class Meta:
         model = PCBuild
         fields = ['cpu', 'gpu', 'ram', 'storage', 'address']
-        widgets = {
-            'cpu': forms.Select(choices=[
-                ('Intel i5', 'Intel i5'),
-                ('Intel i7', 'Intel i7'),
-                ('AMD Ryzen 5', 'AMD Ryzen 5'),
-                ('AMD Ryzen 7', 'AMD Ryzen 7'),
-            ]),
-            'gpu': forms.Select(choices=[
-                ('NVIDIA RTX 3060', 'NVIDIA RTX 3060'),
-                ('NVIDIA RTX 4060', 'NVIDIA RTX 4060'),
-                ('AMD RX 6700 XT', 'AMD RX 6700 XT'),
-            ]),
-            'ram': forms.Select(choices=[
-                ('16 ГБ', '16 ГБ'),
-                ('32 ГБ', '32 ГБ'),
-            ]),
-            'storage': forms.Select(choices=[
-                ('SSD 512 ГБ', 'SSD 512 ГБ'),
-                ('SSD 1 ТБ', 'SSD 1 ТБ'),
-            ]),
-            'address': forms.Textarea(attrs={'rows': 3, 'placeholder': 'Введите адрес доставки'}),
-        }
