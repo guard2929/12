@@ -10,8 +10,6 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-class Components(models.Model):
-    mother_board = CharField()
 
 class PCBuild(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
