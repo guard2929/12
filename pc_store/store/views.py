@@ -31,7 +31,7 @@ def configure_pc(request):
             pcbuild = form.save(commit=False)
             pcbuild.user = request.user
             pcbuild.save()
-            return redirect('store:index')
+            return redirect('index')
     else:
         form = PCBuildForm()
     return render(request, 'store/configure_pc.html', {'form': form})
