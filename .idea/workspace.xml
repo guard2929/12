@@ -6,7 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/configure_pc.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/configure_pc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -194,7 +195,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746358223795</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="1">
+      <option name="closed" value="true" />
+      <created>1746360936925</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1746360936925</updated>
+    </task>
+    <task id="LOCAL-00016" summary="1">
+      <option name="closed" value="true" />
+      <created>1746361551095</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1746361551095</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
