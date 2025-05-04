@@ -19,28 +19,25 @@ class RegisterForm(forms.ModelForm):
         if password and password2 and password != password2:
             self.add_error('password2', "Пароли не совпадают")
 
+
 class PCBuildForm(forms.ModelForm):
-    cpu = forms.ModelChoiceField(
+    cpu = forms.ModelMultipleChoiceField(
         queryset=CPU.objects.all(),
-        widget=forms.RadioSelect,
-        empty_label=None
+        widget=forms.CheckboxSelectMultiple
     )
-    gpu = forms.ModelChoiceField(
+    gpu = forms.ModelMultipleChoiceField(
         queryset=GPU.objects.all(),
-        widget=forms.RadioSelect,
-        empty_label=None
+        widget=forms.CheckboxSelectMultiple
     )
-    ram = forms.ModelChoiceField(
+    ram = forms.ModelMultipleChoiceField(
         queryset=RAM.objects.all(),
-        widget=forms.RadioSelect,
-        empty_label=None
+        widget=forms.CheckboxSelectMultiple
     )
-    storage = forms.ModelChoiceField(
+    storage = forms.ModelMultipleChoiceField(
         queryset=Storage.objects.all(),
-        widget=forms.RadioSelect,
-        empty_label=None
+        widget=forms.CheckboxSelectMultiple
     )
 
     class Meta:
         model = PCBuild
-        fields = ['cpu', 'gpu', 'ram', 'storage', 'address']
+        fields = ['cpu', 'gpu', 'ram', 'storage']
