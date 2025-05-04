@@ -3,7 +3,7 @@
 {% block title %}Собрать ПК{% endblock %} 
  
 {% block content %}
-<h2 xmlns:form.data.storage xmlns:form.data.cpu xmlns:form.data.gpu xmlns:form.data.ram >Соберите свой ПК</h2>
+<h2 >Соберите свой ПК</h2>
  
 {% if success %} 
     <p style="color: #00ff00; font-weight: bold;">Сборка успешно сохранена!</p> 
@@ -16,8 +16,7 @@
     <legend>Процессоры</legend>
     {% for cpu in form.fields.cpu.queryset %}
       <label>
-        <input type="checkbox" name="cpu" value="{{ cpu.id }}"
-               {% if cpu.id|stringformat:"s" in form.data.getlist:'cpu' %}checked{% endif %}>
+        <input type="checkbox" name="cpu" value="{{ cpu.id }}" {% if cpu.id|stringformat:"s" in form.data.getlist:'cpu' %}checked{% endif %} >
         <img src="{{ cpu.image.url }}" alt="{{ cpu.name }}" style="max-width: 80px; display:block; margin:auto;">
         <div>{{ cpu.name }}</div>
       </label>
