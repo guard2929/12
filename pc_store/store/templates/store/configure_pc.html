@@ -3,7 +3,7 @@
 {% block title %}Собрать ПК{% endblock %} 
  
 {% block content %}
-<h2 >Соберите свой ПК</h2>
+<h2 xmlns:cpu.id>Соберите свой ПК</h2>
  
 {% if success %} 
     <p style="color: #00ff00; font-weight: bold;">Сборка успешно сохранена!</p> 
@@ -16,7 +16,7 @@
     <legend>Процессоры</legend>
     {% for cpu in form.fields.cpu.queryset %}
       <label>
-        <input type="checkbox" name="cpu" value="{{ cpu.id }}" {% if cpu.id|stringformat:"s" in form.data.getlist:'cpu' %}checked{% endif %} >
+        <input type="checkbox" name="cpu[]" value="{{ cpu.id }}" {% if cpu.id|stringformat:"s" in selected_cpu %}checked{% endif %} >
         <img src="{{ cpu.image.url }}" alt="{{ cpu.name }}" style="max-width: 80px; display:block; margin:auto;">
         <div>{{ cpu.name }}</div>
       </label>
@@ -27,8 +27,8 @@
     <legend>Видеокарты</legend>
     {% for gpu in form.fields.gpu.queryset %}
       <label>
-        <input type="checkbox" name="gpu" value="{{ gpu.id }}"
-               {% if gpu.id|stringformat:"s" in form.data.getlist:'gpu' %}checked{% endif %}>
+        <input type="checkbox" name="gpu[]" value="{{ gpu.id }}"
+               {% if gpu.id|stringformat:"s" in selected_gpu %}checked{% endif %}>
         <img src="{{ gpu.image.url }}" alt="{{ gpu.name }}" style="max-width: 80px; display:block; margin:auto;">
         <div>{{ gpu.name }}</div>
       </label>
@@ -39,8 +39,8 @@
     <legend>Оперативная память</legend>
     {% for ram in form.fields.ram.queryset %}
       <label>
-        <input type="checkbox" name="ram" value="{{ ram.id }}"
-               {% if ram.id|stringformat:"s" in form.data.getlist:'ram' %}checked{% endif %}>
+        <input type="checkbox" name="ram[]" value="{{ ram.id }}"
+               {% if ram.id|stringformat:"s" in selected_ram %}checked{% endif %}>
         <img src="{{ ram.image.url }}" alt="{{ ram.name }}" style="max-width: 80px; display:block; margin:auto;">
         <div>{{ ram.name }}</div>
       </label>
@@ -51,8 +51,8 @@
     <legend>Накопители</legend>
     {% for storage in form.fields.storage.queryset %}
       <label>
-        <input type="checkbox" name="storage" value="{{ storage.id }}"
-               {% if storage.id|stringformat:"s" in form.data.getlist:'storage' %}checked{% endif %}>
+        <input type="checkbox" name="storage[]" value="{{ storage.id }}"
+               {% if storage.id|stringformat:"s" in selected_storage %}checked{% endif %}>
         <img src="{{ storage.image.url }}" alt="{{ storage.name }}" style="max-width: 80px; display:block; margin:auto;">
         <div>{{ storage.name }}</div>
       </label>
