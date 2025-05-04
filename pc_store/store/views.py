@@ -25,13 +25,29 @@ def register(request):
 
 @login_required
 def configure_pc(request):
+    selected_cpu=request.POST.getlist('cpu')
+    selected_gpu = request.POST.getlist('gpu')
+    selected_ram = request.POST.getlist('ram')
+    selected_storage = request.POST.getlist('storage')
+    success= False
+
     if request.method == 'POST':
         form = PCBuildForm(request.POST)
         if form.is_valid():
             pcbuild = form.save(commit=False)
             pcbuild.user = request.user
             pcbuild.save()
-            return redirect('index')
+            success = True
+            selected_cpu = selected_gpu = selected_ram = selected_storage = []
     else:
         form = PCBuildForm()
-    return render(request, 'store/configure_pc.html', {'form': form})
+    context ={
+        'form': form,
+        'success' : success,
+        'selected_cpu' : selected_cpu,
+        'selected_gpu' : selected_gpu,
+        'selected_ram' : selected_ram,
+        'selected_storage' : selected_storage,
+    }
+    return render(request,'store/configure_pc.html', context)
+
