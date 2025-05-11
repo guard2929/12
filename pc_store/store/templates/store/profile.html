@@ -1,0 +1,32 @@
+{% extends 'store/base.html' %}
+
+{% block title %}Профиль{% endblock %}
+
+{% block content %}
+<div class="profile-container">
+    <h2>Профиль пользователя</h2>
+    <div class="profile-info">
+        <p><strong>Имя пользователя:</strong> {{ user.username }}</p>
+        <p><strong>Email:</strong> {{ user.email }}</p>
+    </div>
+
+    <h3>Ваши сборки</h3>
+    {% if builds %}
+        <div class="build-list">
+            {% for build in builds %}
+                <div class="build-card">
+                    <h4>Сборка #{{ build.id }}</h4>
+                    <p><strong>Статус:</strong> {{ build.get_order_status_display }}</p>
+                    <p><strong>Создана:</strong> {{ build.created_at|date:"d.m.Y H:i" }}</p>
+                    <p><strong>CPU:</strong> {{ build.cpu.all|join:", " }}</p>
+                    <p><strong>GPU:</strong> {{ build.gpu.all|join:", " }}</p>
+                    <p><strong>RAM:</strong> {{ build.ram.all|join:", " }}</p>
+                    <p><strong>Storage:</strong> {{ build.storage.all|join:", " }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>У вас пока нет сборок.</p>
+    {% endif %}
+</div>
+{% endblock %}
