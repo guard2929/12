@@ -51,3 +51,10 @@ def configure_pc(request):
     }
     return render(request,'store/configure_pc.html', context)
 
+@login_required
+def profile_view(request):
+    user_builds = PCBuild.objects.filter(user=request.user)
+    return render(request, 'store/profile.html', {
+        'user': request.user,
+        'builds': user_builds,
+    })
