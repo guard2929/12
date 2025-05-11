@@ -44,7 +44,24 @@ class Storage(models.Model):
 
 class PCBuild(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    cpu = models.ManyToManyField(CPU)
-    gpu = models.ManyToManyField(GPU)
-    ram = models.ManyToManyField(RAM)
-    storage = models.ManyToManyField(Storage)
+    cpu = models.ManyToManyField('CPU')
+    gpu = models.ManyToManyField('GPU')
+    ram = models.ManyToManyField('RAM')
+    storage = models.ManyToManyField('Storage')
+
+    ORDER_STATUSES = [
+        ('pending', 'Ожидает'),
+        ('assembling', 'В сборке'),
+        ('shipped', 'Отправлен'),
+        ('delivered', 'Доставлен'),
+    ]
+    order_status = models.CharField(
+        max_length=20,
+        choices=ORDER_STATUSES,
+        default='pending'
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'Сборка #{self.id} — {self.user.username}'
