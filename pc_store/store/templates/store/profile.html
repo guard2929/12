@@ -10,6 +10,9 @@
         <p><strong>Email:</strong> {{ user.email }}</p>
 <hr>
 <p><a href="{% url 'change_password' %}">Сменить пароль</a></p>
+<p style="margin-top: 20px;">
+    <a href="{% url 'delete_account' %}" style="color: red;">Удалить аккаунт</a>
+</p>
 
     </div>
 
