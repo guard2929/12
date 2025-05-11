@@ -5,6 +5,16 @@ from .models import CPU, GPU, RAM, Storage, PCBuild, Product
 from .forms import RegisterForm, PCBuildForm
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
+from django.contrib.auth import logout
+
+@login_required
+def delete_account(request):
+    if request.method == 'POST':
+        user = request.user
+        logout(request)
+        user.delete()
+        return redirect('index')
+    return render(request, 'store/delete_account.html')
 
 @login_required
 def change_password(request):
