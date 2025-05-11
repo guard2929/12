@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
     </list>
@@ -47,21 +46,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python/Никита Мархель/PyCharm/pc_store/pc_store/store/media/components/storage&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Python/Никита Мархель/PyCharm/pc_store/pc_store/media/components/gpu"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\media\components\gpu" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\storage" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\ram" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\gpu" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\cpu" />
-      <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\media" />
@@ -211,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1746361551095</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="1">
+      <option name="closed" value="true" />
+      <created>1746361982643</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1746361982643</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">

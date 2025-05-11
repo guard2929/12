@@ -1,6 +1,6 @@
 from django.urls import path
-from django.contrib.auth import views as auth_views
 from .views import index, register, configure_pc
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     path('', index, name='index'),
@@ -14,7 +14,6 @@ path('delete-account/', views.delete_account, name='delete_account'),
 
 ]
 
-from django.contrib.auth import views as auth_views
 
 urlpatterns += [
     path('password-reset/',
