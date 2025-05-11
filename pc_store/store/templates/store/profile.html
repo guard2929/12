@@ -8,6 +8,9 @@
     <div class="profile-info">
         <p><strong>Имя пользователя:</strong> {{ user.username }}</p>
         <p><strong>Email:</strong> {{ user.email }}</p>
+<hr>
+<p><a href="{% url 'change_password' %}">Сменить пароль</a></p>
+
     </div>
 
     <h3>Ваши сборки</h3>
@@ -29,4 +32,5 @@
         <p>У вас пока нет сборок.</p>
     {% endif %}
 </div>
+
 {% endblock %}
