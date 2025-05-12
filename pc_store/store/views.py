@@ -6,6 +6,7 @@ from .forms import RegisterForm, PCBuildForm
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import logout
+from django.db.models import Sum
 
 @login_required
 def delete_account(request):
@@ -76,9 +77,30 @@ def configure_pc(request):
     return render(request,'store/configure_pc.html', context)
 
 @login_required
-def profile_view(request):
-    user_builds = PCBuild.objects.filter(user=request.user)
+def profile(request):
+    all_builds = PCBuild.objects.filter(user=request.user)
+    ordered_builds = all_builds.filter(is_ordered=True)
+    drafts = all_builds.filter(is_ordered=False)
+
     return render(request, 'store/profile.html', {
-        'user': request.user,
-        'builds': user_builds,
+        'ordered_builds': ordered_builds,
+        'drafts': drafts,
     })
+@login_required
+def order_pc_build(request, build_id):
+    build = get_object_or_404(PCBuild, id=build_id, user=request.user)
+    if not build.is_ordered:
+        build.is_ordered = True
+        build.order_status = 'pending'
+        build.save()
+    return redirect('profile')
+from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404, redirect
+from .models import PCBuild
+
+@login_required
+def delete_build(request, build_id):
+    build = get_object_or_404(PCBuild, id=build_id, user=request.user)
+    if not build.is_ordered:
+        build.delete()
+    return redirect('profile')

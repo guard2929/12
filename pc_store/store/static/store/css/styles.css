@@ -115,3 +115,14 @@ form div {
 .form-container h2 {
     margin-top: 0;
 }
+.build-list {
+    list-style: none;
+    padding: 0;
+}
+
+.build-list li {
+    margin-bottom: 15px;
+    background-color: #f3f3f3;
+    padding: 10px;
+    border-radius: 5px;
+}

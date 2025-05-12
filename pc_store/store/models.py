@@ -48,6 +48,7 @@ class PCBuild(models.Model):
     gpu = models.ManyToManyField('GPU')
     ram = models.ManyToManyField('RAM')
     storage = models.ManyToManyField('Storage')
+    is_ordered = models.BooleanField(default=False)
 
     ORDER_STATUSES = [
         ('pending', 'Ожидает'),
