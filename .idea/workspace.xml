@@ -5,7 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/pc_store/store/fixtures/full_pc_builds_fixture.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pc_store/store/fixtures/initial_components_data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/pc_store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pc_store.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/gpu/rtx3070_SsI69uS.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/static/store/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/static/store/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_complete.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_confirm.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,45 +40,65 @@
     &quot;assignee&quot;: &quot;guard2929&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/guard2929/12.git&quot;,
-    &quot;accountId&quot;: &quot;35a734b5-3cdc-4cee-8111-3542f02b7f0a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/guard2929/12",
+    "accountId": "15805437-ee3a-4566-8573-87ff3508065d"
   }
-}</component>
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2vLvtICeADYweiXdmccArE0ACTg" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Python/Никита Мархель/PyCharm/pc_store/pc_store/media/components/gpu&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.127.0.0.1:8000.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Admin/PycharmProjects/12/pc_store/store/fixtures",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Admin\PycharmProjects\12\pc_store\store\fixtures" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\media\components\gpu" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\storage" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\ram" />
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\gpu" />
-      <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\store\media\components\cpu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Python\Никита Мархель\PyCharm\pc_store\pc_store\media" />
     </key>
   </component>
+  <component name="RunManager">
+    <configuration name="127.0.0.1:8000" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://127.0.0.1:8000/">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.127.0.0.1:8000" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-884f5ed5d46b-c546a90a8094-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-242.22855.92" />
+        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PY-251.25410.122" />
+        <option value="bundled-python-sdk-880ecab49056-36ea0e71a18c-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-251.25410.122" />
       </set>
     </attachedChunks>
   </component>
@@ -80,6 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743937381384</updated>
+      <workItem from="1747063323391" duration="4444000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -241,8 +272,19 @@
       <option name="project" value="LOCAL" />
       <updated>1746965801545</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="1">
+      <option name="closed" value="true" />
+      <created>1747063598267</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1747063598267</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1" />

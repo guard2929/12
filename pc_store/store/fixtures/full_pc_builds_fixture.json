@@ -1,0 +1,47 @@
+[
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "ПК для стримов и игр",
+      "description": "Комплект: Ryzen 7 5800X3D, RTX 4070 Ti, 32ГБ DDR5, SSD 1TB.\nПодходит для стриминга, монтажа и AAA-игр. Cyberpunk 2077 и Baldur’s Gate 3 на ультра-настройках в 1440p – без просадок.",
+      "price": "2099.99",
+      "image": "products/pc_streamer.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "Компактный Mini-ITX ПК",
+      "description": "Комплект: Intel i5-12400F, RTX 3060, 16ГБ DDR4, SSD 512GB.\nКомпактный, тихий и мощный. Идеален для CS2, Dota 2, Fortnite на высоких настройках в Full HD.",
+      "price": "1199.99",
+      "image": "products/pc_mini_itx.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "Сверхбюджетный игровой ПК",
+      "description": "Комплект: Ryzen 3 4100, GTX 1650, 16ГБ DDR4, HDD 1TB.\nДля Minecraft, World of Tanks и Genshin Impact на средне-низких настройках в 1080p. Отличный стартовый выбор.",
+      "price": "599.99",
+      "image": "products/pc_budget_gaming.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "ПК для разработчика",
+      "description": "Комплект: Intel i7-12700K, 32ГБ DDR5, SSD 1TB, без видеокарты.\nОптимизирован для программирования, работы с Docker и виртуальными машинами. Ubuntu/Linux Ready.",
+      "price": "1399.99",
+      "image": "products/pc_dev_machine.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "4K-геймерская станция",
+      "description": "Комплект: Ryzen 9 7950X, RTX 4090, 64ГБ DDR5, SSD 2TB.\nМаксимальная производительность. Все современные игры в 4K на ультра с трассировкой лучей и DLSS 3.0.",
+      "price": "3499.99",
+      "image": "products/pc_4k_gaming.jpg"
+    }
+  }
+]

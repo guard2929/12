@@ -103,3 +103,15 @@ form div {
     margin-top: 0;
     color: #333;
 }
+
+.form-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.form-container h2 {
+    margin-top: 0;
+}

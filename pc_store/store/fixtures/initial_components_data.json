@@ -1,0 +1,225 @@
+[
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "Intel Core i3-12100F",
+      "image": "components/cpu/intel_core_i312100f.jpg"
+    }
+  },
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "Intel Core i5-12400F",
+      "image": "components/cpu/intel_core_i512400f.jpg"
+    }
+  },
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "Intel Core i7-12700K",
+      "image": "components/cpu/intel_core_i712700k.jpg"
+    }
+  },
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "Intel Core i9-13900K",
+      "image": "components/cpu/intel_core_i913900k.jpg"
+    }
+  },
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "AMD Ryzen 3 4100",
+      "image": "components/cpu/amd_ryzen_3_4100.jpg"
+    }
+  },
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "AMD Ryzen 5 5600X",
+      "image": "components/cpu/amd_ryzen_5_5600x.jpg"
+    }
+  },
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "AMD Ryzen 7 5800X3D",
+      "image": "components/cpu/amd_ryzen_7_5800x3d.jpg"
+    }
+  },
+  {
+    "model": "store.cpu",
+    "fields": {
+      "name": "AMD Ryzen 9 7950X",
+      "image": "components/cpu/amd_ryzen_9_7950x.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "NVIDIA GTX 1650",
+      "image": "components/gpu/nvidia_gtx_1650.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "NVIDIA RTX 3060",
+      "image": "components/gpu/nvidia_rtx_3060.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "NVIDIA RTX 4070 Ti",
+      "image": "components/gpu/nvidia_rtx_4070_ti.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "NVIDIA RTX 4090",
+      "image": "components/gpu/nvidia_rtx_4090.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "AMD Radeon RX 6600",
+      "image": "components/gpu/amd_radeon_rx_6600.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "AMD Radeon RX 6700 XT",
+      "image": "components/gpu/amd_radeon_rx_6700_xt.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "AMD Radeon RX 7800 XT",
+      "image": "components/gpu/amd_radeon_rx_7800_xt.jpg"
+    }
+  },
+  {
+    "model": "store.gpu",
+    "fields": {
+      "name": "AMD Radeon RX 7900 XTX",
+      "image": "components/gpu/amd_radeon_rx_7900_xtx.jpg"
+    }
+  },
+  {
+    "model": "store.ram",
+    "fields": {
+      "name": "Corsair Vengeance 16GB DDR4",
+      "image": "components/ram/corsair_vengeance_16gb_ddr4.jpg"
+    }
+  },
+  {
+    "model": "store.ram",
+    "fields": {
+      "name": "Corsair Vengeance 32GB DDR5",
+      "image": "components/ram/corsair_vengeance_32gb_ddr5.jpg"
+    }
+  },
+  {
+    "model": "store.ram",
+    "fields": {
+      "name": "G.Skill Ripjaws 16GB DDR4",
+      "image": "components/ram/gskill_ripjaws_16gb_ddr4.jpg"
+    }
+  },
+  {
+    "model": "store.ram",
+    "fields": {
+      "name": "G.Skill Trident Z 64GB DDR5",
+      "image": "components/ram/gskill_trident_z_64gb_ddr5.jpg"
+    }
+  },
+  {
+    "model": "store.ram",
+    "fields": {
+      "name": "Kingston Fury 32GB DDR4",
+      "image": "components/ram/kingston_fury_32gb_ddr4.jpg"
+    }
+  },
+  {
+    "model": "store.ram",
+    "fields": {
+      "name": "Patriot Viper 16GB DDR4",
+      "image": "components/ram/patriot_viper_16gb_ddr4.jpg"
+    }
+  },
+  {
+    "model": "store.storage",
+    "fields": {
+      "name": "Samsung 970 EVO 1TB SSD",
+      "image": "components/storage/samsung_970_evo_1tb_ssd.jpg"
+    }
+  },
+  {
+    "model": "store.storage",
+    "fields": {
+      "name": "Samsung 980 PRO 2TB SSD",
+      "image": "components/storage/samsung_980_pro_2tb_ssd.jpg"
+    }
+  },
+  {
+    "model": "store.storage",
+    "fields": {
+      "name": "Western Digital Blue 1TB HDD",
+      "image": "components/storage/western_digital_blue_1tb_hdd.jpg"
+    }
+  },
+  {
+    "model": "store.storage",
+    "fields": {
+      "name": "Seagate Barracuda 2TB HDD",
+      "image": "components/storage/seagate_barracuda_2tb_hdd.jpg"
+    }
+  },
+  {
+    "model": "store.storage",
+    "fields": {
+      "name": "Crucial P3 500GB SSD",
+      "image": "components/storage/crucial_p3_500gb_ssd.jpg"
+    }
+  },
+  {
+    "model": "store.storage",
+    "fields": {
+      "name": "Kingston A400 240GB SSD",
+      "image": "components/storage/kingston_a400_240gb_ssd.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "Игровой ПК ProGamer",
+      "description": "Мощный ПК для современных игр с RTX 4070 Ti.",
+      "price": "1899.99",
+      "image": "products/pc_pro_gamer.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "Бюджетный офисный ПК",
+      "description": "Надежный ПК для офиса и учебы.",
+      "price": "499.99",
+      "image": "products/pc_office.jpg"
+    }
+  },
+  {
+    "model": "store.product",
+    "fields": {
+      "name": "Рабочая станция Creator",
+      "description": "Идеален для монтажа и дизайна.",
+      "price": "2399.99",
+      "image": "products/pc_creator.jpg"
+    }
+  }
+]
