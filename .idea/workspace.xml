@@ -5,17 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
-      <change afterPath="$PROJECT_DIR$/pc_store/store/fixtures/full_pc_builds_fixture.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pc_store/store/fixtures/initial_components_data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/pc_store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/pc_store.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/media/components/gpu/rtx3070_SsI69uS.jpeg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/static/store/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/static/store/css/styles.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_complete.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_complete.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_confirm.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/password_reset_confirm.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/cpu/background1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/cpu/background1_5Iwn9KZ.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/cpu/background1_76PsbyK.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/cpu/background1_HTKGkYj.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/cpu/background1_W5r7MXN.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/gpu/background2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/gpu/background2_P0c6cSM.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/gpu/background2_styQJPa.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/gpu/background2_yYpZbbi.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/ram/background3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/ram/background3_2EJgnzY.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/ram/background3_TrnwJUm.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/storage/background4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/storage/background4_2ZSGRAI.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/components/storage/background4_qTmla9K.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/background_LvQEX7G.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_4k_gaming.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_4k_gaming.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_budget_gaming.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_budget_gaming.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_creator.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_creator.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_dev_machine.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_dev_machine.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_mini_itx.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_mini_itx.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_office.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_office.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_pro_gamer.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_pro_gamer.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/media/products/pc_streamer.png" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/media/products/pc_streamer.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +126,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1743937381384</updated>
-      <workItem from="1747063323391" duration="4444000" />
+      <workItem from="1747063323391" duration="4862000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -280,7 +296,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747063598267</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="1">
+      <option name="closed" value="true" />
+      <created>1747067819426</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1747067819426</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
