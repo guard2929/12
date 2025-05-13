@@ -14,7 +14,6 @@ class ProductAdmin(admin.ModelAdmin):
     has_image.boolean = True
     has_image.short_description = 'Изображение'
 
-
 @admin.register(PCBuild)
 class PCBuildAdmin(admin.ModelAdmin):
     list_display = ('id', 'user', 'is_ordered', 'order_status', 'created_at')
