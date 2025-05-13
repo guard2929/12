@@ -6,7 +6,7 @@ from .forms import RegisterForm, PCBuildForm
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import logout
-from django.db.models import Sum
+
 
 @login_required
 def delete_account(request):
@@ -29,11 +29,9 @@ def change_password(request):
         form = PasswordChangeForm(request.user)
     return render(request, 'store/change_password.html', {'form': form})
 
-
 def index(request):
     products = Product.objects.all()
     return render(request, 'store/index.html', {'products': products})
-
 
 def register(request):
     if request.method == "POST":
