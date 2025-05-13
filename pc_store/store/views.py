@@ -47,35 +47,50 @@ def register(request):
     else:
         form = RegisterForm()
     return render(request, "store/register.html", {"form": form})
+def build_form():
+    return {
+        'fields': {
+            'cpu': CPU.objects.all(),
+            'gpu': GPU.objects.all(),
+            'ram': RAM.objects.all(),
+            'storage': Storage.objects.all(),
+        }
+    }
 
 @login_required
 def configure_pc(request):
-    selected_cpu=request.POST.getlist('cpu')
-    selected_gpu = request.POST.getlist('gpu')
-    selected_ram = request.POST.getlist('ram')
-    selected_storage = request.POST.getlist('storage')
-    success= False
-
     if request.method == 'POST':
-        form = PCBuildForm(request.POST)
-        if form.is_valid():
-            pcbuild = form.save(commit=False)
-            pcbuild.user = request.user
-            pcbuild.save()
-            success = True
-            selected_cpu = selected_gpu = selected_ram = selected_storage = []
-    else:
-        form = PCBuildForm()
-    context ={
-        'form': form,
-        'success' : success,
-        'selected_cpu' : selected_cpu,
-        'selected_gpu' : selected_gpu,
-        'selected_ram' : selected_ram,
-        'selected_storage' : selected_storage,
-    }
-    return render(request,'store/configure_pc.html', context)
+        selected_cpu = request.POST.getlist('cpu[]')
+        selected_gpu = request.POST.getlist('gpu[]')
+        selected_ram = request.POST.getlist('ram[]')
+        selected_storage = request.POST.getlist('storage[]')
 
+        build = PCBuild.objects.create(user=request.user)
+
+        build.cpu.set(CPU.objects.filter(id__in=selected_cpu))
+        build.gpu.set(GPU.objects.filter(id__in=selected_gpu))
+        build.ram.set(RAM.objects.filter(id__in=selected_ram))
+        build.storage.set(Storage.objects.filter(id__in=selected_storage))
+
+        build.save()
+
+        return render(request, 'store/configure_pc.html', {
+            'form': build_form(),
+            'success': True,
+            'selected_cpu': selected_cpu,
+            'selected_gpu': selected_gpu,
+            'selected_ram': selected_ram,
+            'selected_storage': selected_storage,
+        })
+
+    else:
+        return render(request, 'store/configure_pc.html', {
+            'form': build_form(),
+            'selected_cpu': [],
+            'selected_gpu': [],
+            'selected_ram': [],
+            'selected_storage': [],
+        })
 @login_required
 def profile(request):
     all_builds = PCBuild.objects.filter(user=request.user)
