@@ -3,6 +3,12 @@
 
 {% block content %}
 <h2>Профиль: {{ user.username }}</h2>
+<hr>
+<p><a href="{% url 'change_password' %}">Сменить пароль</a></p>
+
+<p style="margin-top: 20px;">
+    <a href="{% url 'delete_account' %}" style="color: red;">Удалить аккаунт</a>
+</p>
 
 <section>
     <h3>Черновики сборок</h3>
@@ -46,4 +52,5 @@
     <p>Вы ещё не оформляли заказы.</p>
     {% endif %}
 </section>
+
 {% endblock %}

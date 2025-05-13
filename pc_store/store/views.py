@@ -59,15 +59,15 @@ def build_form():
 
 @login_required
 def configure_pc(request):
-    cpus     = CPU.objects.all()
-    gpus     = GPU.objects.all()
-    rams     = RAM.objects.all()
+    cpus = CPU.objects.all()
+    gpus = GPU.objects.all()
+    rams = RAM.objects.all()
     storages = Storage.objects.all()
 
     if request.method == 'POST':
-        selected_cpu     = request.POST.getlist('cpu')
-        selected_gpu     = request.POST.getlist('gpu')
-        selected_ram     = request.POST.getlist('ram')
+        selected_cpu = request.POST.getlist('cpu')
+        selected_gpu = request.POST.getlist('gpu')
+        selected_ram = request.POST.getlist('ram')
         selected_storage = request.POST.getlist('storage')
 
         build = PCBuild.objects.create(user=request.user)
@@ -76,13 +76,24 @@ def configure_pc(request):
         build.ram.set(RAM.objects.filter(id__in=selected_ram))
         build.storage.set(Storage.objects.filter(id__in=selected_storage))
         build.save()
-        return redirect('profile')
+
+        return render(request, 'store/configure_pc.html', {
+            'success': True,
+            'component_sections': [
+                {'title': 'Процессоры', 'name': 'cpu', 'items': cpus},
+                {'title': 'Видеокарты', 'name': 'gpu', 'items': gpus},
+                {'title': 'Оперативная память', 'name': 'ram', 'items': rams},
+                {'title': 'Накопители', 'name': 'storage', 'items': storages},
+            ],
+        })
 
     return render(request, 'store/configure_pc.html', {
-        'cpus':     cpus,
-        'gpus':     gpus,
-        'rams':     rams,
-        'storages': storages,
+        'component_sections': [
+            {'title': 'Процессоры', 'name': 'cpu', 'items': cpus},
+            {'title': 'Видеокарты', 'name': 'gpu', 'items': gpus},
+            {'title': 'Оперативная память', 'name': 'ram', 'items': rams},
+            {'title': 'Накопители', 'name': 'storage', 'items': storages},
+        ]
     })
 
 @login_required
