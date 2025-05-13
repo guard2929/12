@@ -3,18 +3,23 @@
 {% block title %}Главная{% endblock %} 
  
 {% block content %} 
-<h2>Добро пожаловать в Магазин ПК!</h2>
+<h2>Добро пожаловать в TechForge!</h2>
 <p>Здесь представлены наши товары:</p>
 <ul>
     {% for product in products %}
-        <li>
-            <h3>{{ product.name }}</h3>
-            <p>{{ product.description }}</p>
-            <p>Цена: {{ product.price }} руб.</p>
-            {% if product.image %}
-                <img src="{{ product.image.url }}" alt="{{ product.name }}" width="150">
-            {% endif %}
-        </li>
+    <li>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Цена: {{ product.price }} руб.</p>
+        <form method="post" action="{% url 'order_prebuilt' product.id %}">
+            {% csrf_token %}
+            <button type="submit">Заказать</button>
+        </form>
+
+        {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" width="150">
+        {% endif %}
+    </li>
     {% endfor %}
 </ul> 
 {% endblock %}

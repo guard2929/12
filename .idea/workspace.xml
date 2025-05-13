@@ -6,10 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/pc_store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/pc_store/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/configure_pc.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/configure_pc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,7 +110,7 @@
       <updated>1743937381384</updated>
       <workItem from="1747063323391" duration="6494000" />
       <workItem from="1747141739147" duration="3296000" />
-      <workItem from="1747147897583" duration="1556000" />
+      <workItem from="1747147897583" duration="2294000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -341,7 +344,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747147991899</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="1">
+      <option name="closed" value="true" />
+      <created>1747149505972</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1747149505972</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

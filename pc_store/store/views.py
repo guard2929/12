@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth import login
 from django.contrib.auth.decorators import login_required
-from .models import CPU, GPU, RAM, Storage, PCBuild, Product
+from .models import CPU, GPU, RAM, Storage, PCBuild, Product, PrebuiltOrder
 from .forms import RegisterForm, PCBuildForm
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
@@ -54,7 +54,11 @@ def build_form():
             'storage': Storage.objects.all(),
         }
     }
-
+@login_required
+def order_prebuilt(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    PrebuiltOrder.objects.create(user=request.user, product=product)
+    return redirect('profile')
 @login_required
 def configure_pc(request):
     cpus = CPU.objects.all()
@@ -90,10 +94,12 @@ def profile(request):
     all_builds = PCBuild.objects.filter(user=request.user)
     ordered_builds = all_builds.filter(is_ordered=True)
     drafts = all_builds.filter(is_ordered=False)
+    prebuilt_orders = PrebuiltOrder.objects.filter(user=request.user)
 
     return render(request, 'store/profile.html', {
         'ordered_builds': ordered_builds,
         'drafts': drafts,
+        'prebuilt_orders': prebuilt_orders,
     })
 @login_required
 def order_pc_build(request, build_id):

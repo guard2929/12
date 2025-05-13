@@ -34,7 +34,16 @@
     <p>У вас нет черновиков сборок.</p>
     {% endif %}
 </section>
-
+<h3>Готовые ПК</h3>
+<ul>
+  {% for order in prebuilt_orders %}
+    <li>
+      <strong>{{ order.product.name }}</strong> — Статус: {{ order.get_status_display }}
+    </li>
+  {% empty %}
+    <li>Нет заказов.</li>
+  {% endfor %}
+</ul>
 <hr>
 
 <section>
