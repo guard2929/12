@@ -157,4 +157,20 @@ form div {
     font-weight: bold;
     margin-top: 5px;
 }
+.component-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.component {
+  text-align: center;
+  width: 150px;
+}
+.component img {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
 

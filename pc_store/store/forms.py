@@ -19,7 +19,6 @@ class RegisterForm(forms.ModelForm):
         if password and password2 and password != password2:
             self.add_error('password2', "Пароли не совпадают")
 
-
 class PCBuildForm(forms.ModelForm):
     cpu = forms.ModelMultipleChoiceField(
         queryset=CPU.objects.all(),

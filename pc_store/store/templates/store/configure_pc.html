@@ -1,38 +1,63 @@
 {% extends 'store/base.html' %}
 {% block title %}Соберите свой ПК{% endblock %}
 {% block content %}
-
 <h2>Соберите свой ПК</h2>
-
-{% if success %}
-<p style="color: green; font-weight: bold;">Сборка успешно сохранена!</p>
-{% endif %}
 
 <form method="post">
   {% csrf_token %}
-  {% for section in component_sections %}
+
   <fieldset>
-    <legend>{{ section.title }}</legend>
-    <table>
-      <tr>
-        {% for item in section.items %}
-        <td style="text-align: center; padding: 10px;">
-          <label>
-            <input type="checkbox" name="{{ section.name }}" value="{{ item.id }}">
-            <br>
-            <img src="{{ item.image.url }}" alt="{{ item.name }}" style="max-width: 80px;"><br>
-            {{ item.name }}
-          </label>
-          {% endfor %}
-        </td>
-        {% if forloop.counter|divisibleby:4 %}
-      </tr><tr>
-      {% endif %}
+    <legend>Процессоры</legend>
+    <div class="component-row">
+      {% for cpu in cpus %}
+        <label class="component">
+          <input type="checkbox" name="cpu" value="{{ cpu.id }}">
+          <img src="{{ cpu.image.url }}" alt="{{ cpu.name }}">
+          <div>{{ cpu.name }}</div>
+        </label>
       {% endfor %}
-    </tr>
-    </table>
+    </div>
   </fieldset>
 
-  <button type="submit" class="submit-btn">Сохранить сборку</button>
+  <fieldset>
+    <legend>Видеокарты</legend>
+    <div class="component-row">
+      {% for gpu in gpus %}
+        <label class="component">
+          <input type="checkbox" name="gpu" value="{{ gpu.id }}">
+          <img src="{{ gpu.image.url }}" alt="{{ gpu.name }}">
+          <div>{{ gpu.name }}</div>
+        </label>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Оперативная память</legend>
+    <div class="component-row">
+      {% for ram in rams %}
+        <label class="component">
+          <input type="checkbox" name="ram" value="{{ ram.id }}">
+          <img src="{{ ram.image.url }}" alt="{{ ram.name }}">
+          <div>{{ ram.name }}</div>
+        </label>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <fieldset>
+    <legend>Накопители</legend>
+    <div class="component-row">
+      {% for storage in storages %}
+        <label class="component">
+          <input type="checkbox" name="storage" value="{{ storage.id }}">
+          <img src="{{ storage.image.url }}" alt="{{ storage.name }}">
+          <div>{{ storage.name }}</div>
+        </label>
+      {% endfor %}
+    </div>
+  </fieldset>
+
+  <button type="submit">Сохранить сборку</button>
 </form>
 {% endblock %}

@@ -75,24 +75,15 @@ def configure_pc(request):
         build.storage.set(Storage.objects.filter(id__in=selected_storage))
         build.save()
 
-        return render(request, 'store/configure_pc.html', {
-            'success': True,
-            'component_sections': [
-                {'title': 'Процессоры', 'name': 'cpu', 'items': cpus},
-                {'title': 'Видеокарты', 'name': 'gpu', 'items': gpus},
-                {'title': 'Оперативная память', 'name': 'ram', 'items': rams},
-                {'title': 'Накопители', 'name': 'storage', 'items': storages},
-            ],
-        })
+        return redirect('profile')
 
     return render(request, 'store/configure_pc.html', {
-        'component_sections': [
-            {'title': 'Процессоры', 'name': 'cpu', 'items': cpus},
-            {'title': 'Видеокарты', 'name': 'gpu', 'items': gpus},
-            {'title': 'Оперативная память', 'name': 'ram', 'items': rams},
-            {'title': 'Накопители', 'name': 'storage', 'items': storages},
-        ]
+        'cpus': cpus,
+        'gpus': gpus,
+        'rams': rams,
+        'storages': storages,
     })
+
 
 @login_required
 def profile(request):
