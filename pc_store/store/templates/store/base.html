@@ -8,30 +8,38 @@
     <link rel="stylesheet" href="{% static 'store/css/styles.css' %}"> 
 </head> 
 <body> 
-    <header> 
-        <h1>TechForge</h1>
-        <nav> 
-            <a href="{% url 'index' %}">Главная</a> 
-            <a href="{% url 'configure_pc' %}">Собрать ПК</a> 
-            {% if user.is_authenticated %}
-                <form action="{% url 'logout' %}" method="post">
-                  {% csrf_token %}
-                  <button type="submit" class="btn btn-info">Logout</button>
-                </form>
-                <a href="{% url 'profile' %}">Профиль</a>
-            {% else %} 
-                <a href="{% url 'login' %}">Вход</a>
-                <a href="{% url 'register' %}">Регистрация</a> 
-            {% endif %} 
-        </nav> 
-    </header> 
- 
-    <main> 
-        {% block content %}{% endblock %} 
-    </main> 
- 
-    <footer> 
-        <p>&copy; 2025 TechForge. All rights reserved.</p>
-    </footer> 
+<header>
+    <h1>TechForge</h1>
+    <nav>
+        <a href="{% url 'index' %}">Главная</a>
+        <a href="{% url 'configure_pc' %}">Собрать ПК</a>
+        {% if user.is_authenticated %}
+        <form action="{% url 'logout' %}" method="post">
+            {% csrf_token %}
+            <button type="submit" class="btn btn-info">Logout</button>
+        </form>
+        <a href="{% url 'profile' %}">Профиль</a>
+        {% else %}
+        <a href="{% url 'login' %}">Вход</a>
+        <a href="{% url 'register' %}">Регистрация</a>
+        {% endif %}
+    </nav>
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+
+</header>
+
+<main>
+    {% block content %}{% endblock %}
+</main>
+
+<footer>
+    <p>&copy; 2025 TechForge. All rights reserved.</p>
+</footer>
 </body> 
 </html> 

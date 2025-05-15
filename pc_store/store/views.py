@@ -72,8 +72,8 @@ def configure_pc(request):
         selected_ram = request.POST.getlist('ram')
         selected_storage = request.POST.getlist('storage')
 
-        if not (selected_cpu or selected_gpu or selected_ram or selected_storage):
-            messages.error(request, 'Выберите хотя бы один компонент для сборки.')
+        if not selected_cpu or not selected_ram:
+            messages.error(request, "Пожалуйста, выберите хотя бы один процессор и одну планку оперативной памяти.")
             return render(request, 'store/configure_pc.html', {
                 'cpus': cpus,
                 'gpus': gpus,
@@ -88,7 +88,7 @@ def configure_pc(request):
         build.storage.set(Storage.objects.filter(id__in=selected_storage))
         build.save()
 
-        messages.success(request, 'Сборка успешно сохранена!')
+        messages.success(request, "Сборка успешно сохранена!")
         return redirect('profile')
 
     return render(request, 'store/configure_pc.html', {
@@ -97,6 +97,7 @@ def configure_pc(request):
         'rams': rams,
         'storages': storages,
     })
+
 @login_required
 def profile(request):
     all_builds = PCBuild.objects.filter(user=request.user)
