@@ -8,6 +8,18 @@ from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import logout
 from django.contrib import messages
 
+def about(request):
+    return render(request, 'store/about.html')
+
+def faq(request):
+    return render(request, 'store/faq.html')
+
+def contacts(request):
+    return render(request, 'store/contacts.html')
+
+def privacy_policy(request):
+    return render(request, 'store/privacy_policy.html')
+
 @login_required
 def delete_account(request):
     if request.method == 'POST':
