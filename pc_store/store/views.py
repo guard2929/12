@@ -6,7 +6,7 @@ from .forms import RegisterForm, PCBuildForm
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import logout
-
+from django.contrib import messages
 
 @login_required
 def delete_account(request):
@@ -72,6 +72,15 @@ def configure_pc(request):
         selected_ram = request.POST.getlist('ram')
         selected_storage = request.POST.getlist('storage')
 
+        if not (selected_cpu or selected_gpu or selected_ram or selected_storage):
+            messages.error(request, 'Выберите хотя бы один компонент для сборки.')
+            return render(request, 'store/configure_pc.html', {
+                'cpus': cpus,
+                'gpus': gpus,
+                'rams': rams,
+                'storages': storages,
+            })
+
         build = PCBuild.objects.create(user=request.user)
         build.cpu.set(CPU.objects.filter(id__in=selected_cpu))
         build.gpu.set(GPU.objects.filter(id__in=selected_gpu))
@@ -79,6 +88,7 @@ def configure_pc(request):
         build.storage.set(Storage.objects.filter(id__in=selected_storage))
         build.save()
 
+        messages.success(request, 'Сборка успешно сохранена!')
         return redirect('profile')
 
     return render(request, 'store/configure_pc.html', {
@@ -87,8 +97,6 @@ def configure_pc(request):
         'rams': rams,
         'storages': storages,
     })
-
-
 @login_required
 def profile(request):
     all_builds = PCBuild.objects.filter(user=request.user)
