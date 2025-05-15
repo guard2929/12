@@ -78,7 +78,7 @@ form div {
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    background: #000000;
+    background: #111;
     border-radius: 10px;
 }
 
@@ -90,14 +90,13 @@ form div {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    text-decoration-color: #111111;
-    background-color: #111111;
+    background-color: #111;
 }
 
 .build-card {
     padding: 15px;
-    background-color: #000000;
-    border: 1px solid #000000;
+    background-color: #111;
+    border: 1px solid #111;
     border-radius: 8px;
 }
 
@@ -110,7 +109,7 @@ form div {
     max-width: 400px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #000000;
+    background-color: #111;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
@@ -124,7 +123,7 @@ form div {
 
 .build-list li {
     margin-bottom: 15px;
-    background-color: #000000;
+    background-color: #111;
     padding: 10px;
     border-radius: 5px;
 }
@@ -137,10 +136,10 @@ form div {
 }
 
 .component-card {
-    border: 1px solid #000000;
+    border: 1px solid #111;
     padding: 10px;
     text-align: center;
-    background: #000000;
+    background: #111;
     border-radius: 8px;
     transition: 0.3s;
 }
