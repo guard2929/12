@@ -5,15 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="77ec0046-db58-400a-9e3d-1b0f8a44af1b" name="Changes" comment="1">
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/db.sqlite3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pc_store/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/debug.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/profile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pc_store/store/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/static/store/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/static/store/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pc_store/store/templates/store/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/pc_store/store/templates/store/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,24 +48,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;JavaScript Debug.127.0.0.1:8000.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/PycharmProjects/12/pc_store/store/fixtures&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.127.0.0.1:8000.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/Admin/PycharmProjects/12/pc_store/store/fixtures",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "advanced.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\PycharmProjects\12\pc_store\store\fixtures" />
@@ -110,7 +107,8 @@
       <updated>1743937381384</updated>
       <workItem from="1747063323391" duration="6494000" />
       <workItem from="1747141739147" duration="3296000" />
-      <workItem from="1747147897583" duration="2294000" />
+      <workItem from="1747147897583" duration="3676000" />
+      <workItem from="1747319579163" duration="598000" />
     </task>
     <task id="LOCAL-00001" summary="1">
       <option name="closed" value="true" />
@@ -352,7 +350,23 @@
       <option name="project" value="LOCAL" />
       <updated>1747149505972</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="1">
+      <option name="closed" value="true" />
+      <created>1747152289412</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1747152289412</updated>
+    </task>
+    <task id="LOCAL-00032" summary="1">
+      <option name="closed" value="true" />
+      <created>1747153531576</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1747153531576</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
