@@ -91,6 +91,7 @@ form div {
     flex-direction: column;
     gap: 20px;
     text-decoration-color: #111111;
+    background-color: #111111;
 }
 
 .build-card {
