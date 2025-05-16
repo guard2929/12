@@ -18,8 +18,6 @@ urlpatterns = [
     path('order/<int:build_id>/', views.order_pc_build, name='order_pc_build'),
     path('build/delete/<int:build_id>/', views.delete_build, name='delete_build'),
     path('order_prebuilt/<int:product_id>/', views.order_prebuilt, name='order_prebuilt'),
-
-
 ]
 
 urlpatterns += [
