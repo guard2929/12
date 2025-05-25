@@ -7,28 +7,28 @@
 <p>Здесь представлены наши товары:</p>
 <ul>
     {% for product in products %}
-<li>
-    <h3>{{ product.name }}</h3>
-    <p>{{ product.description }}</p>
-    <p>Цена: {{ product.price }} руб.</p>
+    <li>
+        <h3>{{ product.name }}</h3>
+        <p>{{ product.description }}</p>
+        <p>Цена: {{ product.price }} руб.</p>
 
-    <form method="post" action="{% url 'order_prebuilt' product.id %}">
-        {% csrf_token %}
-        <button type="submit">Заказать</button>
-    </form>
+        <form method="post" action="{% url 'order_prebuilt' product.id %}">
+            {% csrf_token %}
+            <button type="submit">Заказать</button>
+        </form>
 
-    {% if user.is_superuser %}
-    <form method="post" action="{% url 'delete_product' product.id %}">
-        {% csrf_token %}
-        <button type="submit" onclick="return confirm('Удалить товар?')" style="color:red;">Удалить товар</button>
-    </form>
-    {% endif %}
+        {% if user.is_superuser %}
+        <form method="post" action="{% url 'add_product'%}">
+            {% csrf_token %}
+            <button type="submit" onclick="return confirm('Удалить товар?')" style="color:red;">Удалить товар</button>
+        </form>
+        {% endif %}
 
-    {% if product.image %}
-    <img src="{{ product.image.url }}" alt="{{ product.name }}" width="150">
-    {% endif %}
-</li>
-{% endfor %}
+        {% if product.image %}
+        <img src="{{ product.image.url }}" alt="{{ product.name }}" width="150">
+        {% endif %}
+    </li>
+    {% endfor %}
 
 </ul> 
 {% endblock %}

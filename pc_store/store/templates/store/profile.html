@@ -15,48 +15,48 @@
 <hr>
 <section>
     <h3 style="color: red;">Админ-панель</h3>
-    <p><a href="{% url 'admin:add_product' %}" class="button">Добавить новый ПК</a></p>
+    <p><a href="{% url 'add_product' %}" class="button">Добавить новый ПК</a></p>
 </section>
 {% endif %}
-{% if user.is_superuser %}
+
 <hr>
 <h3>Админ-функции</h3>
 <p><a href="{% url 'add_product' %}">Добавить новый ПК</a></p>
-{% endif %}
+
 
 <section>
     <h3>Черновики сборок</h3>
     {% if drafts %}
-        <ul class="build-list" style="background-color: #111111">
-            {% for build in drafts %}
-                <li>
-                    {{ build }}<br>
-                    <form action="{% url 'order_pc_build' build.id %}" method="post" style="display:inline;">
-                        {% csrf_token %}
-                        <button type="submit">Оформить заказ</button>
-                    </form>
+    <ul class="build-list" style="background-color: #111111">
+        {% for build in drafts %}
+        <li>
+            {{ build }}<br>
+            <form action="{% url 'order_pc_build' build.id %}" method="post" style="display:inline;">
+                {% csrf_token %}
+                <button type="submit">Оформить заказ</button>
+            </form>
 
-                    <form action="{% url 'delete_build' build.id %}" method="post" style="display:inline; margin-left:10px;">
-                        {% csrf_token %}
-                        <button type="submit" onclick="return confirm('Удалить сборку?')">Удалить</button>
-                    </form>
+            <form action="{% url 'delete_build' build.id %}" method="post" style="display:inline; margin-left:10px;">
+                {% csrf_token %}
+                <button type="submit" onclick="return confirm('Удалить сборку?')">Удалить</button>
+            </form>
 
-                </li>
-            {% endfor %}
-        </ul>
+        </li>
+        {% endfor %}
+    </ul>
     {% else %}
     <p>У вас нет черновиков сборок.</p>
     {% endif %}
 </section>
 <h3>Готовые ПК</h3>
 <ul>
-  {% for order in prebuilt_orders %}
+    {% for order in prebuilt_orders %}
     <li>
-      <strong>{{ order.product.name }}</strong> — Статус: {{ order.get_status_display }}
+        <strong>{{ order.product.name }}</strong> — Статус: {{ order.get_status_display }}
     </li>
-  {% empty %}
+    {% empty %}
     <li>Нет заказов.</li>
-  {% endfor %}
+    {% endfor %}
 </ul>
 <hr>
 
