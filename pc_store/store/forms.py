@@ -40,3 +40,8 @@ class PCBuildForm(forms.ModelForm):
     class Meta:
         model = PCBuild
         fields = ['cpu', 'gpu', 'ram', 'storage']
+
+class ProductForm(forms.ModelForm):
+    class Meta:
+        model = Product
+        fields = ['name', 'description', 'price', 'image']
