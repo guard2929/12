@@ -9,6 +9,17 @@ from django.contrib.auth import update_session_auth_hash
 from django.contrib.auth import logout
 from django.contrib import messages
 
+
+@staff_member_required
+def add_product(request):
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            return redirect('index')
+    else:
+        form = ProductForm()
+    return render(request, 'store/add_product.html', {'form': form})
 def about(request):
     return render(request, 'store/about.html')
 
