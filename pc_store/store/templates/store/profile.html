@@ -6,9 +6,18 @@
 <hr>
 <p><a href="{% url 'change_password' %}">Сменить пароль</a></p>
 
+
 <p style="margin-top: 20px;">
     <a href="{% url 'delete_account' %}" style="color: red;">Удалить аккаунт</a>
 </p>
+
+{% if user.is_superuser %}
+<hr>
+<section>
+    <h3 style="color: red;">Админ-панель</h3>
+    <p><a href="{% url 'admin:add_product' %}" class="button">Добавить новый ПК</a></p>
+</section>
+{% endif %}
 
 <section>
     <h3>Черновики сборок</h3>
