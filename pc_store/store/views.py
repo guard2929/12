@@ -140,3 +140,8 @@ def delete_build(request, build_id):
     if not build.is_ordered:
         build.delete()
     return redirect('profile')
+@staff_member_required
+def delete_product(request, product_id):
+    product = get_object_or_404(Product, id=product_id)
+    product.delete()
+    return redirect('home')
