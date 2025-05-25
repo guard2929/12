@@ -18,6 +18,11 @@
     <p><a href="{% url 'admin:add_product' %}" class="button">Добавить новый ПК</a></p>
 </section>
 {% endif %}
+{% if user.is_superuser %}
+<hr>
+<h3>Админ-функции</h3>
+<p><a href="{% url 'add_product' %}">Добавить новый ПК</a></p>
+{% endif %}
 
 <section>
     <h3>Черновики сборок</h3>
